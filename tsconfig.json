@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["/*"],
+      "@/components/*": ["components/*"],
+      "@/middleware/*": ["middleware/*"],
+      "@/lib/*": ["lib/*"],
+      "@/next-auth/*": ["next-auth/*"],
+      "@/intefaces/*": ["intefaces/*"],
+      "@/styles/*": ["styles/*"],
+      "@/pages": ["pages/*"],
+      "@/types/*": ["types/*"]
+    },
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": ["process.d.ts", "next-env.d.ts", "next-auth.d.ts", "additional.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
